@@ -18,6 +18,8 @@ let audioL = document.getElementById('audio-L')
 
 let audioO = document.getElementById('audio-O')
 
+let audioN = document.getElementById('audio-N')
+
 
 let playSound = (event) => {
     if (event.key == 'a'){
@@ -68,6 +70,10 @@ let playSound = (event) => {
     else if (event.key == 'o'){
         audioO.currentTime = 0.54
         audioO.play()
+    }
+    else if (event.key =='n'){
+        audioN.currentTime = 0
+        audioN.play()
     }
 }
 
